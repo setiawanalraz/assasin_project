@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
+}
+
+.gambar{
+    background-color: #FF731D;
+    position: relative;
+    width: 450px;
+    height: 700px;
+    border-radius: 20px;
+}
+
+.gugel {
+    width: 20px;
+    height: 20px;
+}
+
+.tombol{
+    width: 150px;
+    background-color: #0E2E6E;
+    color: #F7FFC5;
+}
+
+.tombolLogin{
+    background-color: #0E2E6E;
+    color: #F7FFC5;
+    border-radius: 12px;
+}
+
+.loginGoogle{
+    border-color: black;
+    border-radius: 12px;
+    color: #0E2E6E;
+}
+
+.tombol2{
+    width: 300px;
+    background-color: #0E2E6E;
+    color: #F7FFC5;
+    border-radius: 10px;
+}
+
+.tombol:hover{
+    width: 150px;
+    background-color: #FF731D;
+    color: #0E2E6E;
+}
+
+.tombolLogin:hover{
+    background-color: #FF731D;
+    color: #0E2E6E;
+}
+
+.tombol2:hover{
+    background-color: #FF731D;
+    color: #0E2E6E;
+}
+
+.kotak{
+    height: 50px;
+    background: #FFEBC5;
+    position: relative;
+}
+
+.kotakSign {
+    height: 50px;
+    width: 300px;
+    background: #FFEBC5;
+    position: relative;
+    border-radius: 16px;
+}
+
+.gambar2 {
+    position: absolute;
+    left: 75.54%;
+    /* right: -12.07%; */
+    top: -12%;
+    bottom: 29.19%;
+}
+
+.gambar3{
+    position: absolute;
+    width: 60%;
+    left: -14%;
+    top: 50.82%;
+    /* bottom: -104.8%; */
+}
+
+.logo {
+    position: absolute;
+    left: 93%;
+    top: 3%;
+}
+
+#hide, #hide3, #info {
+    display: none;
+}
+
+.inputIcon span {
+    position: absolute;
+    right: 64px;
+    padding-top: 4px;
+}
+
+.passReveal span {
+    position: absolute;
+    padding-top: 4px;
+}
+
+
+#hide, #hide2, #hide3, #hide4 {
+    cursor: pointer;
+}
+
+[type="checkbox"]{
+    background: #F7FFC5;
+    height: 15px;
+    width: 15px;
+    position: relative;
+}
+
+h6 {
+    color: #0E2E6E;
+    position: relative;
+}

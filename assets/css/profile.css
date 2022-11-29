@@ -1,0 +1,86 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFEBC5;
+}
+
+.button-success {
+    width: 178px;
+    height: 34px;
+    background-color: #0E2E6E !important;
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    color: #F7FFC5 !important;
+}
+
+.username {
+    font-weight: 500;
+    font-size: 30px;
+    color: #0E2E6E !important;
+}
+
+.name {
+    font-weight: 400;
+    font-size: 25px;
+    color: #0E2E6E !important;
+}
+
+.about {
+    font-weight: 400;
+    font-size: 30px;
+    color: #0E2E6E !important;
+}
+
+.form-label-about {
+    font-weight: 500;
+    font-size: 16px;
+    color: #0E2E6E !important;
+    height: 50px;
+}
+
+.form-control-about {
+    width: 100%;
+    height: 148px;
+    border: 2px solid #89B9FF;
+    border-radius: 10px;
+}
+
+.form-label-name {
+    font-weight: 300;
+    font-size: 16px;
+    color: #0E2E6E !important;
+    height: 41px;
+}
+
+.form-control-name {
+    width: 100%;
+    height: 49px;
+    border: 2px solid #89B9FF;
+    border-radius: 10px;
+}
+
+.form-label-username {
+    font-weight: 300;
+    font-size: 16px;
+    color: #0E2E6E !important;
+    height: 41px;
+}
+
+.form-control-username {
+    width: 100%;
+    height: 49px;
+    border: 2px solid #89B9FF;
+    border-radius: 10px;
+}
+
+.button-primary-save {
+    width: 100%;
+    height: 46px;
+    background-color: #0E2E6E !important;
+    border-radius: 20px;
+    border: none;
+    font-weight: 700;
+    font-size: 20px;
+    color: #F7FFC5 !important;
+}
