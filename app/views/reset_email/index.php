@@ -28,18 +28,23 @@
                     </div>
                 </div>
                 <div class="col-lg-7 col-md-6 mt-5 px-5 pt-5">
+                    <div class="col-sm-12">
+                        <?php
+                        Flasher::Message();
+                        ?>
+                    </div>
                     <h1 class="fw-bold py-3 text-center" style="color: #0E2E6E;">Reset Password</h1>
-                    <form>
+                    <form action="<?= base_url; ?>/resetEmail/verificationEmail" method="post">
                         <div class="form-row mt-3">
                             <div class="col-lg-12 col-md-6 mt-3">
                                 <h5 class="form-label fw-bold mb-3" style="color: #0E2E6E;">Email</h5>
-                                <input type="text" class="kotak form-control" placeholder="">
+                                <input type="text" class="kotak form-control" placeholder="" name="email">
                                 <p class="mt-1" id="info">Email Sent <i class="bi bi-check-lg"></i> </p>
                             </div>
                         </div>
                         <div class="form-row text-center">
                             <div class="col-lg-12 py-5 my-5">
-                                <button type="button" class="btn tombol fw-bold" id="btnSend">Send</button>
+                                <button type="submit" class="btn tombol fw-bold" id="btnSend">Send</button>
                             </div>
                         </div>
                     </form>

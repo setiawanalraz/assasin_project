@@ -2,7 +2,7 @@
 
 namespace Library;
 
-class Request {
+class Test {
 
 	private $controller;
 

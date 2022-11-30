@@ -40,61 +40,6 @@ class ConHitApi extends Controller
         echo json_encode($response);
     }
 
-    public function streamContext()
-    {
-        // $opts = array(
-        //     'http' => array(
-        //         'method' => "POST",
-        //         'header' => array(
-        //             'Content-Type: application/json',
-        //             //butuh user access token?
-        //             'Authorization: Bearer EAAHlN6vLLVABAFbZCiNoZCpaZAJCcYizb9ZAZC2mQMenzsJSQ9h0az2VNJDORVjTDVUZBA02D8lb2Jp3qgyoN0ONj5uO364RBs2nGKCdCwz0iovOOrnxFpy9jZAzPEskcq0w0PTcUTvkPAh67XMnzckD6yDMyghZAOdpiFsJNFPmrZCRCNUXeubj4StzhzGHxSLLLCZChgxZCuZAoiOfcjMWWhlZASgeTLphV90jwpGqXzyJZAgxHfDgWqqs7yM6LtGInD9RAZD',
-        //         ),
-        //         'data-raw' => array(
-        //             'messaging_product' => 'whatsapp',
-        //             'recipient_type' => 'individual',
-        //             'to' => '+6285882036847',
-        //             'type' => 'text',
-        //             'text' => array(
-        //                 'preview_url' => 'false',
-        //                 'body' => 'Halo, selamat pagi!',
-        //             ),
-        //         ),
-        //     ),
-        // );
-
-        // $context = stream_context_create($opts);
-
-        // $fp = fopen('https://graph.facebook.com/v15.0/110205415029489/messages', 'r', false, $context);
-        // fpassthru($fp);
-        // fclose($fp);
-
-
-        $postdata = http_build_query(
-            array(
-                'messaging_product' => 'whatsapp',
-                'recipient_type' => 'individual',
-                'to' => '+6285882036847',
-                'type' => 'text',
-                'text' => array(
-                    'preview_url' => 'false',
-                    'body' => 'Halo, selamat pagi!',
-                )
-            )
-        );
-        $opts = array('http' =>
-        array(
-            'method' => 'POST',
-            'header' => 'Content-type: application/json',
-            'content' => $postdata
-        ));
-
-        $context = stream_context_create($opts);
-        $response = file_get_contents('http://localhost/assasin_project/public/conhitapi/request', false, $context);
-        var_dump($response);
-        die;
-    }
-
     public function request()
     {
         header("Content-Type: application/json; charset=UTF-8");
